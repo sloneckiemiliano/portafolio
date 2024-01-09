@@ -1,0 +1,420 @@
+/* BODY */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* MAIN */
+
+.logo {
+  width: 10rem;
+  height: 1rem;
+  margin-top: 1rem;
+}
+
+.img-carousel {
+  border-radius: 15px 15px 0px 0px;
+}
+
+
+
+/* THEME */
+
+
+.image-svg {
+  width: 100px;
+  height: 40px;
+  margin-right: auto;
+}
+
+.tema {
+  width: 15vh;
+  padding-left: 10px;
+  margin-top: -2rem;
+}
+
+.svg-nav {
+  fill: rgb(90, 90, 90);
+}
+
+
+/* BUTTON */
+
+.contenedor {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(rgb(105, 105, 105),rgb(70, 70, 70));
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s ease all;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px 1px #00000085;
+}
+
+.boton span {
+  position: relative;
+  z-index: 2;
+  transition: .3s ease all;
+}
+
+  /* BOTON CERO */
+
+  .boton.cero {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    box-shadow: 5px 5px 15px 1px #00000085;
+    color: #000000;
+    background: linear-gradient(#FFFF00,#FFF000);
+  }
+
+  .boton.cero span {
+    transition: .4s ease-in-out all;
+    position: absolute;
+    left: 40%;
+  }
+  
+  .boton.cero .icono {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: -40px;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+  }
+  
+  .boton.cero svg {
+    color: #000000;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .boton.cero:hover {
+    background:  #FFFF00;
+  }
+    
+  .boton.cero:hover .icono {
+    left: calc(100% - 50px);
+    opacity: 1;
+  }
+  
+  .boton.cero:hover span {
+    left: 20px;
+  }
+
+
+
+/* BOTON UNO*/
+
+.boton.uno {
+  background: #FFFF00;
+  color: #000000;
+  border-radius: 5rem;
+  background: linear-gradient(#FFFF00,#FFF000);
+}
+
+.boton.uno::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #FFFF00;
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 0;
+  transition: .3s ease-in-out all;
+  background-image: url('../img/house.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60px;
+}
+
+.boton.uno:hover::after {
+  top: 0;
+}
+
+/* BOTON DOS*/
+
+
+.boton.dos span {
+  transition: .4s ease-in-out all;
+  position: absolute;
+  left: 43%;
+}
+
+.boton.dos .icono {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  left: -40px;
+  transition: .3s ease-in-out all;
+  opacity: 0;
+}
+
+.boton.dos svg {
+  color: #fff;
+  width: 35px;
+  height: 35px;
+}
+
+.boton.dos:hover {
+  background: #0D6EFD
+}
+
+.boton.dos:hover .icono {
+  left: calc(100% - 50px);
+  opacity: 1;
+}
+
+.boton.dos:hover span {
+  left: 20px;
+}
+
+
+/* MODAL FLOTANTE */
+
+.flotante {
+width: 50px;
+height: 50px;
+background: linear-gradient(#FFFF00,#fff000);
+box-shadow: 5px 5px 15px 1px #00000085;
+border: none;
+}
+
+
+/* BUTTON AUTO-SCROLL */
+
+html {
+scroll-behavior: smooth;
+}
+
+.btn-scrolltop {
+position: fixed;
+bottom: 90px;
+right: 24px;
+padding: 4px 5px;
+background: linear-gradient(rgb(105, 105, 105),rgb(160, 160, 160));
+color: #ffc107;
+border: none;
+border-radius: 10%;
+cursor: pointer;
+transform: translateY(1000px);
+transition: 0.3s;
+box-shadow: 5px 5px 15px 1px #00000085;
+}
+
+.btn-scrolltop-on {
+transform: translateY(0);
+}
+
+
+
+
+
+/* FOOTER */
+
+.pie {
+display: flex;
+flex-direction: column;
+gap: 0.5em;
+}
+
+.up {
+display: flex;
+flex-direction: row;
+gap: 0.5em;
+}
+
+.down {
+display: flex;
+flex-direction: row;
+gap: 0.5em;
+}
+
+.card1 {
+width: 90px;
+height: 90px;
+outline: none;
+border: none;
+background: white;
+border-radius: 90px 5px 5px 5px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transition: .2s ease-in-out;
+}
+
+.instagram {
+margin-top: 1.5em;
+margin-left: 1.2em;
+fill: #cc39a4;
+}
+
+.card2 {
+width: 90px;
+height: 90px;
+outline: none;
+border: none;
+background: white;
+border-radius: 5px 90px 5px 5px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transition: .2s ease-in-out;
+}
+
+.linkedin {
+margin-top: 1.5em;
+margin-left: -.9em;
+fill: #0e76a8;
+}
+
+.card3 {
+width: 90px;
+height: 90px;
+outline: none;
+border: none;
+background: white;
+border-radius: 5px 5px 5px 90px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transition: .2s ease-in-out;
+}
+
+.github {
+margin-top: -.6em;
+margin-left: 1.2em;
+}
+
+.card4 {
+width: 90px;
+height: 90px;
+outline: none;
+border: none;
+background: white;
+border-radius: 5px 5px 90px 5px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transition: .2s ease-in-out;
+}
+
+.whatsapp {
+margin-top: -.9em;
+margin-left: -1.2em;
+fill: #25D366;
+}
+
+.card1:hover {
+cursor: pointer;
+scale: 1.1;
+background: linear-gradient(130deg, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+}
+
+.card1:hover .instagram {
+fill: white;
+}
+.card2:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+fill: white;
+}
+
+.card3:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: black;
+}
+
+.card3:hover .github {
+fill: white;
+}
+
+.card4:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #25D366;
+}
+
+.card4:hover .discord {
+fill: white;
+}
+
+.copyright {
+text-decoration: none;
+}
+
+
+
+/* LOADER */
+/*
+.loader {
+backdrop-filter: blur(100px);
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100000;
+clip-path: circle(150% at 100% 0);
+transition: clip-path 0s ease-in-out;
+}
+
+.loader2 {
+clip-path: circle(0% at 100% 100%);
+} 
+*/
+
+.logo1 path {
+fill: none;
+/*stroke: #c2ffff;
+filter: drop-shadow(0 0 50px #71ffff) drop-shadow(0 0 100px #00ffff) drop-shadow(0 0 150px #00e5e5);*//* variable de color 2 */
+stroke: #FFFF00;
+filter: drop-shadow(0 0 150px #cd1cea) drop-shadow(0 0 300px #6115ab) drop-shadow(0 0 450px #270a63); /* variable de color 1 */
+stroke-width: 150; /* Ajusta este número para cambiar el grosor del trazo */
+stroke-dasharray: 48000; /* Longitud del trazo, ajusta según la longitud de la ruta en tu SVG */
+stroke-dashoffset: 50000; /* Al principio, el trazo está completamente oculto */
+animation: draw 3s infinite linear; /* Animación de 10 segundos, infinita y lineal */
+}
+
+
+@keyframes draw {
+to {
+    stroke-dashoffset: 0; /* Modificar este valor, cuanto menor sea, más rápido será el trazo */
+}
+}
