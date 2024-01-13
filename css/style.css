@@ -209,9 +209,9 @@
 /* MODAL FLOTANTE */
 
 .flotante {
-width: 50px;
-height: 50px;
-background: linear-gradient(#FFFF00,#fff000);
+width: 75px;
+height: 75px;
+background: linear-gradient(#ff9100,#ff7b00);
 box-shadow: 5px 5px 15px 1px #00000085;
 border: none;
 }
