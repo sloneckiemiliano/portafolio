@@ -2,10 +2,10 @@ body{
     font-family: system-ui;
 }
 header{
-    background-color: #e4e4e8;
+    background-color: #7f7ff1;
     padding-top: 18px;
     padding-bottom: 18px;
-    box-shadow: 0 7px 8px -3px grey;
+    box-shadow: 0 7px 8px -3px rgb(160, 101, 255);
     position: fixed;
     width: 100%;
     margin-top: -10px;
