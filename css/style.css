@@ -418,3 +418,44 @@ to {
     stroke-dashoffset: 0; /* Modificar este valor, cuanto menor sea, más rápido será el trazo */
 }
 }
+.en{
+  color: #7f7ff1;
+  float: right;
+}
+.es{
+  color: #041dff;
+  float:right;
+}
+.check{
+  position:relative;
+  width: 50px;
+  height: 20%;
+  float: right;
+}
+.check:before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: #000;
+  border-radius: 25px;
+}
+.check:after{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #000;
+  box-sizing:  border-box;
+}
+.check:checked:after{
+  left: 25px;
+  border: 2px solid #00a1ff;
+
+}
+.check:checked:before{
+  background: #00a1ff;
+}
